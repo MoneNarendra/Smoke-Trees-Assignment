@@ -10,14 +10,14 @@ class RegistedForm extends Component {
     }
 
     getAllData = async () => {
-        const response = await fetch("http://localhost:3000/data")
+        const response = await fetch("https://smoke-trees-assignment-pkgh.onrender.com/data")
         const data = await response.json();
         this.setState({ userDetails: data.allUsers, allAddress: data.allAddress })
     }
 
     addUserDetails = async () => {
         const { name, address } = this.state
-        const url = `http://localhost:3000/register`;
+        const url = `https://smoke-trees-assignment-pkgh.onrender.com/register`;
 
         const userDetails = { name, address };
         const options = {
