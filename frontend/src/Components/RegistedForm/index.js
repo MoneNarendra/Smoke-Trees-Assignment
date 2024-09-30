@@ -30,12 +30,13 @@ class RegistedForm extends Component {
         };
         await fetch(url, options);
         this.getAllData();
+        this.setState({name: "", address: "", errorMsg: "", error: false})
     }
 
     submitForm = (event) => {
         event.preventDefault();
         const { name, address } = this.state
-        console.log(name, address)
+        
         if (name === "" || address === "") {
             this.setState({ errorMsg: "Fill the Details", error: true })
         } else {
