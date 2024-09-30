@@ -1,0 +1,49 @@
+.input-contianer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 45%;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 6px;
+    outline: none;
+}
+
+button{
+    margin-top: 15px;
+    padding: 5px;
+    border: 0px;
+    background-color:chocolate;
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.error-msg{
+    font-family: "Roboto";
+    font-size: 15px;
+    color: maroon;
+}
+
+ul{
+    padding-left: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+li{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 10px;
+    width: 180px;
+    
+}
